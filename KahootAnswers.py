@@ -2,9 +2,9 @@ import requests, json, os
 
 _clear = lambda: os.system('cls')
 
-def _getQuizInfo(_id):
+def _getQuizInfo(_id):697f12b2-273f-4754-955d-9359fc760416
     try:
-        _response = requests.get(f"https://api.gradyn.com/kahoot/{_id}")
+        _response = requests.get(f"https://api.gradyn.com/kahoot/{697f12b2-273f-4754-955d-9359fc760416_id}")
         if 'INVALID_DATA' not in _response.text:
             return _response.text
         else:
@@ -36,7 +36,7 @@ def _main():
                               
 """)
     print("[Main] Made By Roni | V1.1")
-    _quizId = input("[Main] Quiz-ID: ")
+    _quizId = input("[Main] Quiz-ID:697f12b2-273f-4754-955d-9359fc760416 ")
     try:
         _quizInfoText = _getQuizInfo(_quizId)
         if _quizInfoText != "Nah":
